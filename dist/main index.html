@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr.Pathak's Super Specialty Dental & Implant Clinic</title>
+  <link rel="stylesheet" href="output.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <style>
+    .card-shadow {
+      -webkit-box-shadow: 7px 8px 14px 0px rgba(81, 81, 81, 0.58);
+      box-shadow: 7px 8px 14px 0px rgba(81, 81, 81, 0.38);
+    }
+
+
+    .card {
+      background-color: #FEB00F;
+      position: relative;
+      overflow: hidden;
+      transition: 0.5s ease-in-out;
+    }
+
+    .card img {
+
+      transition: 0.5s ease-in-out;
+      overflow: hidden;
+
+    }
+
+    .card:hover img {
+      filter: brightness(0.5);
+      object-fit: cover;
+    }
+
+    .detial {
+      color: rgb(212, 212, 212);
+      position: absolute;
+      bottom: -50%;
+      padding: 20px 20px 0px 20px;
+      transition: 0.5s ease-in-out;
+      overflow-y: hidden;
+    }
+
+    .card:hover .detial {
+      transform: translateY(-300%);
+    }
+
+    .card:hover {
+      transform: translateY(20px);
+    }
+
+
+
+    .detial button:hover {
+      background-color: black;
+    }
+
+    .detial p {
+      color: rgba(255, 255, 255, 0.753);
+    }
+  </style>
+</head>
+
+<body class="overflow-x-hidden font-sans scroll-smooth bg-white">
+  <!-- Header -->
+  <!-- navbar -->
+  <header class="sticky top-0 z-50 flex justify-between px-8 py-4 text-gray-700 bg-white border-b-2 md:px-16">
+    <div class="w-full bg-white absolute top-0 z-10 h-[79px] left-0 md:hidden"></div>
+    <div class="z-20">
+      <img width="45px" class="rounded-full cursor-pointer hover:shadow-2xl hover:shadow-black hover:scale-105"
+        src="logo3.png" alt="" />
+    </div>
+
+    <div id="mobile-nav-div"
+      class="absolute bg-white w-full h-auto left-0 top-0 md:hidden mt-[77px] -translate-y-full transition-all duration-500 -z-10">
+      <ul class="flex flex-col gap-5 px-12 py-5 font-sans font-semibold">
+        <li>
+          <a class="text-lg text-[#006CFF]" href="#">Home</a>
+        </li>
+        <li><a class="text-lg hover:text-[#006CFF]" href="#">Services</a></li>
+        <li><a class="text-lg hover:text-[#006CFF]" href="#">About Us</a></li>
+        <li>
+          <a class="text-lg hover:text-[#006CFF]" href="#">Contact Us</a>
+        </li>
+        <button class="bg-[#006CFF] py-2 rounded-xl text-white hover:bg-blue-500 font-semibold">
+          Appointment
+        </button>
+      </ul>
+    </div>
+
+    <div class="z-20 flex items-center md:hidden">
+      <svg id="menu" class="transition-all duration-500" id="menu-btn" xmlns="http://www.w3.org/2000/svg" width="48"
+        height="48" viewBox="0 0 24 24" style="fill: rgb(0, 0, 0)">
+        <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+      </svg>
+      <img id="close-menu" class="hidden mr-1" width="24" src="close.png" alt="" />
+    </div>
+
+    <div class="hidden my-auto md:block">
+      <ul class="flex items-center gap-12">
+        <li>
+          <a class="text-lg font-semibold text-[#006CFF] duration-300" href="#">Home</a>
+        </li>
+        <li>
+          <a class="text-lg font-semibold hover:text-[#006CFF] duration-300 hover:scale-105" href="#">Services</a>
+        </li>
+        <li>
+          <a class="text-lg font-semibold hover:text-[#006CFF] duration-300" href="#">About Us</a>
+        </li>
+        <li>
+          <a class="text-lg font-semibold hover:text-[#006CFF] duration-300" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="hidden my-auto md:block">
+      <button class="bg-[#006CFF] rounded-lg text-white hover:bg-blue-500 py-1 px-3 font-semibold">
+        Appointment
+      </button>
+    </div>
+  </header>
+
+  <!-- navbar end -->
+
+  <section
+    class="w-screen h-[calc(100vh-79px)] grid-cols-1 grid xl:grid-cols-2 xl:p-5 p-3 xl:px-16 xl:bg-white justify-centers bg-white xs:bg-white md:bg-white lg:bg-white">
+    <div class="flex items-center justify-center">
+      <div class=" xl:py-6">
+        <p
+          class="xl:flex gap-2 xl:items-center xl:justify-start flex items-center justify-center text-[#1B1B1B] font-semibold md:flex md:items-center md:justify-start md:ml-12 lg:ml-20 lg:text-lg xl:ml-0">
+          <span><img width="24px" class="xs:w-4 lg:w-6 " src="happy.png" alt="" /></span>Smile Comes
+          First
+        </p>
+        <h1
+          class="xl:text-6xl font-bold xl:text-start leading-[1.15] xl:mt-1 text-[#171C34] text-center sm:text-4xl xs:text-xl md:text-6xl lg:text-8xl text-4xl">
+          Protect your Smile and take care of
+          <span
+            class="flex items-center justify-center gap-2 xl:flex xl:items-center xl:justify-start xl:text-start">your
+            health<img class="w-9 xl:w-16 md:w-16" src="electrocardiogram.png" alt="" /></span>
+        </h1>
+
+        <p
+          class="text-[#696969] xl:w-[70%] font-semibold xl:my-10 xl:text-start text-center my-3 text-sm xs:text-xs md:text-base md:my-6 md:w-[80%] md:mx-auto lg:text-xl lg:my-12 xl:text-base xl:mx-0">
+          Dedicated dental professionals enhancing oral health and confidence
+          with exceptional care, brightening smiles for lifelong happiness.
+        </p>
+        <div class="flex items-center justify-center gap-3 xl:flex xl:items-center xl:justify-start xl:gap-4">
+          <button
+            class="bg-[#006CFF] xl:p-3 xs:p-1 p-2 md:p-3 lg:p-5 md:font-semibold rounded-lg text-base font-semibold text-white xs:font-medium lg:font-semibold lg:text-lg xl:text-base xl:font-semibold">
+            Make Appointment
+          </button>
+          <button class="flex items-center gap-3 xl:p-[11px] xs:p-1 p-[7px] lg:p-5 md:p-3 md:font-semibold md:gap-3 border-2 rounded-lg font-semibold text-base border-[#9C9C9C]
+              text-[#1B1B1B] xs:font-medium lg:font-semibold lg:text-lg lg:gap-6 xl:text-base xl:font-semibold ">
+            <span><i class="bx bxs-phone"></i></span">9838192442
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-center md:mx-auto md:w-full">
+      <div class="flex items-center gap-3 md:gap-12 lg:w-full lg:flex lg:items-center lg:justify-center xl:gap-6">
+        <div
+          class="xl:w-48 xl:h-72 bg-[#DDDEE0] rounded-full flex items-end overflow-hidden w-32 h-60 md:w-44 md:h-64 lg:w-48 lg:h-72">
+          <img class="object-cover" src="doctor-5.jpeg" alt="" />
+        </div>
+        <div
+          class="xl:w-64 xl:h-[450px] bg-[#FBC324] rounded-full flex items-end relative w-52 xs:w-[190px] xs:h-[325px]">
+          <div class="overflow-hidden rounded-full md:w-80 md:h-96 lg:w-64 lg:h-[450px]">
+            <img class="object-cover xs:h-[325px] md:h-[400px] md:object-cover lg:h-[450px]" src="doctor-6-removebg.png"
+              alt="" />
+          </div>
+          <div class="absolute -translate-x-3 translate-y-4 top-4">
+            <img width="64px" class="xl:w-16 w-14 xs:w-10" src="dentistry.png" alt="" />
+          </div>
+          <div
+            class="absolute translate-x-8 -translate-y-10 bg-transparent rounded-lg backdrop-blur-lg xl:translate-x-52 xl:-translate-y-52 card-shadow xl:inline-block xs:translate-x-5">
+            <div class="flex items-center gap-3 p-2">
+              <div class="inline-block p-1 bg-white rounded-lg">
+                <img width="28px" src="clinic.png" alt="">
+              </div>
+              <div>
+                <h1 class="text-base font-semibold text-white xl:text-black">1000+</h1>
+                <p class="text-sm font-medium text-white xl:text-black">Patient/Year</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-screen h-[calc(100vh-79px)] xl:bg-white grid xl:grid-cols-2 relative bg-white md:bg-white">
+    <div
+      class="w-20 h-20 rounded-full absolute top-0 left-0 bg-[#FEB00F] xl:-translate-x-10 -translate-x-14 xl:-translate-y-3 -translate-y-5 backdrop-blur-3xl blur-xl">
+    </div>
+    <div
+      class="w-20 h-20 rounded-full absolute bottom-0 right-0 bg-[#006EFE] xl:-translate-x-4 xl:translate-y-14 backdrop-blur-3xl blur-xl">
+    </div>
+    <div class="flex items-center justify-center">
+      <div
+        class="card object-cover rounded-tl-[50px] rounded-br-[50px] hover:rounded-tr-[50px] hover:rounded-bl-[50px] duration-500 transition-all shadow-2xl shadow-black/50 xl:w-[280px] xl:h-[360px] w-64 h-80 xs:w-52 xs:h-64 xs:mt-1 md:w-72 md:h-96">
+        <img
+          class="object-cover w-full h-full rounded-tl-[50px] rounded-br-[50px] hover:rounded-tr-[50px] hover:rounded-bl-[50px] duration-500 transition-all"
+          src="doctor-5.jpeg" alt="">
+        <div class="detial">
+          <h2 class="text-xl font-bold text-white xs:text-base">Dr.Mudita T. Pathak</h2>
+          <p class="font-medium">Dental Surgeon<button></button>
+          <p>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-center xl:flex xl:items-center xl:justify-start">
+      <div class="flex items-center flex-col w-[80%]">
+        <h2
+          class="text-4xl xl:text-start text-center font-bold xl:mb-0 mb-5 text-[#171C34] xs:text-2xl xs:mb-4 md:text-6xl lg:text-8xl xl:text-5xl lg:text-center">
+          Transform Your
+          Smile with
+          Expert Dental Care</h2>
+        <p
+          class="md:mb-6 mb-5 text-[#696969] font-semibold xl:text-start text-center xs:text-xs xs:mb-4 md:text-base md:my-6 md:w-[80%] md:mx-auto lg:text-xl lg:my-12 xl:w-full xl:my-5 xl:text-base xl:font-normal">
+          Dedicated to
+          top-notch
+          dental
+          care, we offer routine check-ups, advanced treatments, and personalized attention for a healthy, beautiful
+          smile you can trust.</p>
+        <div
+          class="flex items-center justify-center w-full gap-5 xl:flex xl:items-start xl:justify-start xs:gap-3 md:gap-6">
+          <div class="flex flex-col gap-1 xl:gap-2">
+            <h1 class="text-base font-bold text-[#171C34] md:text-lg lg:text-2xl xl:text-base">Positive Feedback</h1>
+            <h1 class="text-3xl font-bold text-[#171C34] xl:text-start text-center">95%</h1>
+            <div class="w-full h-3 rounded-full bg-[#006EFE]"></div>
+          </div>
+          <div class="z-20 flex flex-col gap-1 xl:gap-2">
+            <h1 class="text-base font-bold text-[#171C34] md:text-lg lg:text-2xl xl:text-base">Experience Doctor's</h1>
+            <h1 class="text-3xl font-bold text-[#171C34] xl:text-start text-center">95%</h1>
+            <div class="w-full h-3 rounded-full bg-[#FEB00F]"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="w-screen h-[calc(100vh-79px)] xl:bg-white grid xl:grid-cols-2 relative bg-white md:bg-white">
+    <div
+      class="w-20 h-20 rounded-full absolute top-0 left-0 bg-[#FEB00F] xl:-translate-x-10 -translate-x-14 xl:-translate-y-3 -translate-y-5 backdrop-blur-3xl blur-xl">
+    </div>
+    <div
+      class="w-20 h-20 rounded-full absolute bottom-0 right-0 bg-[#006EFE] xl:-translate-x-4 xl:translate-y-14 backdrop-blur-3xl blur-xl">
+    </div>
+
+
+    <div class="flex items-center justify-center xl:flex xl:items-center xl:justify-end">
+      <div class="flex items-center flex-col w-[80%]">
+        <h2
+          class="text-4xl xl:text-start text-center font-bold xl:mb-0 mb-5 text-[#171C34] xs:text-2xl xs:mb-4 md:text-6xl lg:text-8xl xl:text-5xl lg:text-center xl:mr-auto">
+          Your Smile, Our Priority</h2>
+        <p
+          class="md:mb-6 mb-5 text-[#696969] font-semibold xl:text-start text-center xs:text-xs xs:mb-4 md:text-base md:my-6 md:w-[80%] md:mx-auto lg:text-xl lg:my-12 xl:w-full xl:my-5 xl:text-base xl:font-normal">
+          We prioritize your smile by delivering exceptional dental care, ensuring comfort, and offering personalized
+          treatments for your utmost satisfaction.</p>
+        <div
+          class="flex items-center justify-center w-full gap-5 xl:flex xl:items-start xl:justify-start xs:gap-3 md:gap-6">
+          <button
+            class="bg-[#006CFF] xl:p-3 xs:p-1 p-2 md:p-3 lg:p-5 md:font-semibold rounded-lg text-base font-semibold text-white xs:font-medium lg:font-semibold lg:text-lg xl:text-base xl:font-semibold">
+            Learn More
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="flex items-center justify-center">
+      <div
+        class="card object-cover rounded-tl-[50px] rounded-br-[50px] hover:rounded-tr-[50px] hover:rounded-bl-[50px] duration-500 transition-all shadow-2xl shadow-black/50 xl:w-[280px] xl:h-[360px] w-64 h-80 xs:w-52 xs:h-64 xs:mt-1 md:w-72 md:h-96 ">
+        <img
+          class="object-cover rounded-tl-[50px] rounded-br-[50px] hover:rounded-tr-[50px] hover:rounded-bl-[50px] duration-500 transition-all"
+          src="doctor-6-removebg.png" alt="">
+        <div class="detial">
+          <h2 class="text-xl font-bold text-white xs:text-base">Dr.Tushar S. Pathak</h2>
+          <p class="font-medium">Periodontist & Implantologist<button></button>
+          <p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white mx-auto w-[85%] h-[calc(100vh-79px)] grid grid-cols-2">
+    <div class="bg-white">
+      <div class="w-full items-center flex justify-center h-full rounded-lg overflow-hidden"> <img
+          class="w-80 rounded-lg"
+          src="https://img.freepik.com/premium-photo/clean-sterile-doctors-office-room-being-nice-arranged-with-new-equipment-treatment_259150-18025.jpg?w=360"
+          alt=""> </div>
+    </div>
+    <div class="bg-white">
+      <div class=" grid xl:grid-cols-2 pr-12">
+        <div class=" px-2">
+          <div>
+            <h1 class="text-3xl font-bold py-10">About us</h1>
+          </div>
+          <div> <button
+              class="bg-black text-white py-1 px-2 rounded-full text-sm font-normal cursor-default">Establishment</button>
+            <h1 class="font-semibold text-base py-3"> Dr. Pathak's Superspecialty Dental & Implant Clinic</h1>
+            <p class="font-normal text-black70 text-sm mb-8"> Dr. Pathak's Superspecialty Dental & Implant Clinic was
+              established in the year 2012. It has a team of specialists who provide specialised dental care.</p>
+          </div>
+          <div> <button
+              class="bg-black text-white py-1 px-2 rounded-full text-sm font-normal cursor-default">Leadership</button>
+            <h1 class="font-semibold text-base py-3">Dr. Tushar Pathak & Dr. Mudita Pathak</h1>
+            <p class="font-normal text-black70 text-sm mb-8"> The clinic is primarily run by Dr. Tushar Pathak
+              [MDS(Periodontist & Oral Implantologist)] and Dr. Mudita Pathak(BDS) situated at Santoshi mata Road,
+              Rambaug, Kalyan west.</p>
+          </div>
+        </div>
+        <div class=" px-2">
+          <div class="mt-[116px]"> <button
+              class="bg-black text-white py-1 px-2 rounded-full text-sm font-normal cursor-default">Mission</button>
+            <h1 class="font-semibold text-base py-3">Personalized and High-Quality Dental Care</h1>
+            <p class="font-normal text-black70 text-sm mb-8"> We offer personalized, high-quality dental care for the
+              whole family, utilizing cutting-edge equipment and advanced pain management.</p>
+          </div>
+          <div> <button class="bg-black text-white py-1 px-2 rounded-full text-sm font-normal cursor-default">Services
+              Offered</button>
+            <h1 class="font-semibold text-base py-3">Comprehensive Dental Treatments</h1>
+            <p class="font-normal text-black70 text-sm mb-8"> We offer dental services like implants, painless root
+              canals, smile design, whitening, oral and gum surgeries, cosmetic dentistry, Invisalign, and top-notch
+              treatments, all at affordable rates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
