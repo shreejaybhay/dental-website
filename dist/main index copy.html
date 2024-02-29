@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr.Pathak's Super Specialty Dental & Implant Clinic</title>
+  <link rel="stylesheet" href="output.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <style>
+    .card-shadow {
+      -webkit-box-shadow: 7px 8px 14px 0px rgba(81, 81, 81, 0.58);
+      box-shadow: 7px 8px 14px 0px rgba(81, 81, 81, 0.38);
+    }
+
+
+    .card {
+      background-color: #FEB00F;
+      position: relative;
+      overflow: hidden;
+      transition: 0.5s ease-in-out;
+    }
+
+    .card img {
+
+      transition: 0.5s ease-in-out;
+      overflow: hidden;
+
+    }
+
+    .card:hover img {
+      filter: brightness(0.5);
+      object-fit: cover;
+    }
+
+    .detial {
+      color: rgb(212, 212, 212);
+      position: absolute;
+      bottom: -50%;
+      padding: 20px 20px 0px 20px;
+      transition: 0.5s ease-in-out;
+      overflow-y: hidden;
+    }
+
+    .card:hover .detial {
+      transform: translateY(-300%);
+    }
+
+    .card:hover {
+      transform: translateY(20px);
+    }
+
+
+
+    .detial button:hover {
+      background-color: black;
+    }
+
+    .detial p {
+      color: rgba(255, 255, 255, 0.753);
+    }
+
+
+    .card1 {
+      position: relative;
+      width: 300px;
+      height: 190px;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+      transition: 0.5s;
+    }
+
+    .card1:hover {
+      height: 380px;
+    }
+
+    .imgcard1 {
+      position: absolute;
+      left: 50%;
+      top: -50px;
+      transform: translateX(-50%);
+      width: 150px;
+      height: 150px;
+      border-radius: 20px;
+      box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.35);
+      background-color: #FBC324;
+      transition: 0.5s;
+    }
+
+    .imgcard1 img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    .card1:hover .imgcard1 {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .card1 .content1 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .card1 .content1 .detials1 {
+      padding: 40px;
+      text-align: center;
+      width: 100%;
+      transition: 0.5s;
+      transform: translateY(140px);
+    }
+
+    .card1:hover:hover .content1 .detials1 {
+      transform: translateY(0px);
+    }
+
+    .card1 .content1 .detials1 h2 {
+      font-size: 1.25em;
+      font-weight: 600;
+      color: #555;
+      line-height: 1.2em;
+    }
+
+    .card1 .content1 .detials1 h2 span {
+      font-size: 0.75em;
+      font-weight: 500;
+      opacity: 0.5;
+    }
+
+    .data1 {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0px;
+    }
+
+    .data1 h3 {
+      font-size: 1em;
+      color: #555;
+      line-height: 1.2em;
+      font-weight: 600;
+    }
+
+    .data1 h3 span {
+      font-size: 0.85em;
+      font-weight: 400;
+      opacity: 0.5;
+    }
+
+    .actionbtn1 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .actionbtn1 button {
+      padding: 10px 30px;
+      border: none;
+      outline: none;
+      color: #fff;
+      background-color: rgb(70, 70, 70);
+      border-radius: 5px;
+      transition: 0.5s;
+      font-size: 1em;
+      font-weight: 500;
+    }
+
+    .actionbtn1 .Message1 {
+      background-color: #dddddd;
+      color: rgb(70, 70, 70);
+    }
+
+    .Follow1:hover {
+      background-color: #dddddd;
+      color: rgb(70, 70, 70);
+    }
+
+    .Message1:hover {
+      background-color: rgb(70, 70, 70);
+      color: #dddddd;
+    }
+
+    .subject {
+      animation: reveal linear both;
+      animation-timeline: view(block);
+      animation-range: entry 0% contain 50%;
+    }
+
+    @keyframes reveal {
+      0% {
+        opacity: 0;
+        transform: scale(0) translateY(-200px);
+      }
+
+      80% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .treat {
+      animation: subreveal linear both;
+      animation-timeline: view(block);
+      animation-range: cover 80% cover 100%;
+    }
+
+    @keyframes subreveal {
+      0% {
+        transform: scale(1);
+      }
+
+      100% {
+        transform: scale(1.5);
+      }
+    }
+
+    .scale-up-center {
+      animation: scale-up-center 0.8s;
+    }
+
+    @keyframes scale-up-center {
+      0% {
+        transform: scale(.6);
+      }
+
+      70% {
+        transform: scale(1);
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    #subject {
+      animation: reveal linear both;
+      animation-timeline: view(block);
+      animation-range: entry 0% contain 50%;
+    }
+
+    @keyframes reveal {
+      0% {
+        opacity: 0;
+        transform: scale(0) translateY(-200px);
+      }
+
+      80% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .text {
+      animation: textreveal linear both;
+      animation-timeline: view(block);
+      animation-range: exit 0% cover 50%;
+    }
+
+    @keyframes textreveal {
+      0% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body class="overflow-x-hidden font-sans scroll-smooth bg-white scroll">
+  <!-- Header -->
+  <!-- navbar -->
+  <header class="sticky top-0 z-50 flex justify-between px-8 py-4 text-gray-700 bg-white border-b-2 md:px-16">
+    <div class="w-full bg-white absolute top-0 z-10 h-[79px] left-0 md:hidden"></div>
+    <div class="z-20">
+      <img width="45px" class="rounded-full cursor-pointer hover:shadow-2xl hover:shadow-black hover:scale-105"
+        src="logo3.png" alt="" />
+    </div>
+
+    <div id="mobile-nav-div"
+      class="absolute bg-white w-full h-auto left-0 top-0 md:hidden mt-[77px] -translate-y-full transition-all duration-500 -z-10">
+      <ul class="flex flex-col gap-5 px-12 py-5 font-sans font-semibold">
+        <li>
+          <a class="text-lg text-[#006CFF]" href="#">Home</a>
+        </li>
+        <li><a class="text-lg hover:text-[#006CFF]" href="#">Services</a></li>
+        <li><a class="text-lg hover:text-[#006CFF]" href="#">About Us</a></li>
+        <li>
+          <a class="text-lg hover:text-[#006CFF]" href="#">Contact Us</a>
+        </li>
+        <button class="bg-[#006CFF] py-2 rounded-xl text-white hover:bg-blue-500 font-semibold">
+          Appointment
+        </button>
+      </ul>
+    </div>
+
+    <div class="z-20 flex items-center md:hidden">
+      <svg id="menu" class="transition-all duration-500" id="menu-btn" xmlns="http://www.w3.org/2000/svg" width="48"
+        height="48" viewBox="0 0 24 24" style="fill: rgb(0, 0, 0)">
+        <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+      </svg>
+      <img id="close-menu" class="hidden mr-1" width="24" src="close.png" alt="" />
+    </div>
+
+    <div class="hidden my-auto md:block">
+      <ul class="flex items-center gap-12">
+        <li>
+          <a class="text-lg font-semibold text-[#006CFF] duration-300" href="#">Home</a>
+        </li>
+        <li>
+          <a class="text-lg font-semibold hover:text-[#006CFF] duration-300 hover:scale-105" href="#">Services</a>
+        </li>
+        <li>
+          <a class="text-lg font-semibold hover:text-[#006CFF] duration-300" href="#">About Us</a>
+        </li>
+        <li>
+          <a class="text-lg font-semibold hover:text-[#006CFF] duration-300" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="hidden my-auto md:block">
+      <button class="bg-[#006CFF] rounded-lg text-white hover:bg-blue-500 py-1 px-3 font-semibold">
+        Appointment
+      </button>
+    </div>
+  </header>
+
+  <!-- navbar end -->
+
+  <section
+    class="w-screen h-[calc(100vh-79px)] grid-cols-1 grid xl:grid-cols-2 xl:p-5 p-3 xl:px-16 xl:bg-white justify-centers bg-white xs:bg-white md:bg-white lg:bg-white ">
+    <div class="flex items-center justify-center">
+      <div class=" xl:py-6">
+        <p
+          class="xl:flex gap-2 xl:items-center xl:justify-start flex items-center justify-center text-[#1B1B1B] font-semibold md:flex md:items-center md:justify-start md:ml-12 lg:ml-20 lg:text-lg xl:ml-0 scale-up-center">
+          <span><img width="24px" class="xs:w-4 lg:w-6 " src="happy.png" alt="" /></span>Smile Comes
+          First
+        </p>
+        <h1
+          class="xl:text-6xl font-bold xl:text-start leading-[1.15] xl:mt-1 text-[#171C34] text-center sm:text-4xl xs:text-xl md:text-6xl lg:text-8xl text-4xl scale-up-center">
+          Protect your Smile and take care of
+          <span
+            class="flex items-center justify-center gap-2 xl:flex xl:items-center xl:justify-start xl:text-start">your
+            health<img class="w-9 xl:w-16 md:w-16" src="electrocardiogram.png" alt="" /></span>
+        </h1>
+
+        <p
+          class="text-[#696969] xl:w-[70%] font-semibold xl:my-10 xl:text-start text-center my-3 text-sm xs:text-xs md:text-base md:my-6 md:w-[80%] md:mx-auto lg:text-xl lg:my-12 xl:text-base xl:mx-0 scale-up-center">
+          Dedicated dental professionals enhancing oral health and confidence
+          with exceptional care, brightening smiles for lifelong happiness.
+        </p>
+        <div class="flex items-center justify-center gap-3 xl:flex xl:items-center xl:justify-start xl:gap-4">
+          <button
+            class="bg-[#006CFF] xl:p-3 xs:p-1 p-2 md:p-3 lg:p-5 md:font-semibold rounded-lg text-base font-semibold text-white xs:font-medium lg:font-semibold lg:text-lg xl:text-base xl:font-semibold scale-up-center">
+            Make Appointment
+          </button>
+          <button
+            class="flex items-center gap-3 xl:p-[11px] xs:p-1 p-[7px] lg:p-5 md:p-3 md:font-semibold md:gap-3 border-2 rounded-lg font-semibold text-base border-[#9C9C9C]
+              text-[#1B1B1B] xs:font-medium lg:font-semibold lg:text-lg lg:gap-6 xl:text-base xl:font-semibold scale-up-center">
+            <span><i class="bx bxs-phone"></i></span">9838192442
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-center md:mx-auto md:w-full">
+      <div class="flex items-center gap-3 md:gap-12 lg:w-full lg:flex lg:items-center lg:justify-center xl:gap-6">
+        <div
+          class="xl:w-48 xl:h-72 bg-[#DDDEE0] rounded-full flex items-end overflow-hidden w-32 h-60 md:w-44 md:h-64 lg:w-48 lg:h-72 scale-up-center">
+          <img class="object-cover" src="doctor-5.jpeg" alt="" />
+        </div>
+        <div
+          class="xl:w-64 xl:h-[450px] bg-[#FBC324] rounded-full flex items-end relative w-52 xs:w-[190px] xs:h-[325px] scale-up-center">
+          <div class="overflow-hidden rounded-full md:w-80 md:h-96 lg:w-64 lg:h-[450px] ">
+            <img class="object-cover xs:h-[325px] md:h-[400px] md:object-cover lg:h-[450px]" src="doctor-6-removebg.png"
+              alt="" />
+          </div>
+          <div class="absolute -translate-x-3 translate-y-4 top-4">
+            <img width="64px" class="xl:w-16 w-14 xs:w-10" src="dentistry.png" alt="" />
+          </div>
+          <div
+            class="absolute translate-x-8 -translate-y-10 bg-transparent rounded-lg backdrop-blur-lg xl:translate-x-52 xl:-translate-y-52 card-shadow xl:inline-block xs:translate-x-5">
+            <div class="flex items-center gap-3 p-2">
+              <div class="inline-block p-1 bg-white rounded-lg">
+                <img width="28px" src="clinic.png" alt="">
+              </div>
+              <div>
+                <h1 class="text-base font-semibold text-white xl:text-black">1000+</h1>
+                <p class="text-sm font-medium text-white xl:text-black">Patient/Year</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="w-screen h-[calc(100vh-79px)] xl:bg-white grid xl:grid-cols-2 relative bg-white md:bg-white overflow-hidden">
+
+    <div class="flex items-center justify-center">
+      <div
+        class="card object-cover rounded-tl-[50px] rounded-br-[50px] hover:rounded-tr-[50px] hover:rounded-bl-[50px] duration-500 transition-all shadow-2xl shadow-black/50 xl:w-[280px] xl:h-[360px] w-64 h-80 xs:w-52 xs:h-64 xs:mt-1 md:w-72 md:h-96">
+        <img
+          class="object-cover w-full h-full rounded-tl-[50px] rounded-br-[50px] hover:rounded-tr-[50px] hover:rounded-bl-[50px] duration-500 transition-all"
+          src="doctor-5.jpeg" alt="">
+        <div class="detial">
+          <h2 class="text-xl font-bold text-white xs:text-base">Dr.Mudita T. Pathak</h2>
+          <p class="font-medium">Dental Surgeon<button></button>
+          <p>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-center xl:flex xl:items-center xl:justify-start">
+      <div class="flex items-center flex-col w-[80%]">
+        <h2
+          class="text-4xl xl:text-start text-center font-bold xl:mb-0 mb-5 text-[#171C34] xs:text-2xl xs:mb-4 md:text-6xl lg:text-8xl xl:text-5xl lg:text-center">
+          Transform Your
+          Smile with
+          Expert Dental Care</h2>
+        <p
+          class="md:mb-6 mb-5 text-[#696969] font-semibold xl:text-start text-center xs:text-xs xs:mb-4 md:text-base md:my-6 md:w-[80%] md:mx-auto lg:text-xl lg:my-12 xl:w-full xl:my-5 xl:text-base xl:font-normal">
+          Dedicated to
+          top-notch
+          dental
+          care, we offer routine check-ups, advanced treatments, and personalized attention for a healthy, beautiful
+          smile you can trust.</p>
+        <div
+          class="flex items-center justify-center w-full gap-5 xl:flex xl:items-start xl:justify-start xs:gap-3 md:gap-6">
+          <div class="flex flex-col gap-1 xl:gap-2">
+            <h1 class="text-base font-bold text-[#171C34] md:text-lg lg:text-2xl xl:text-base">Positive Feedback</h1>
+            <h1 class="text-3xl font-bold text-[#171C34] xl:text-start text-center">95%</h1>
+            <div class="w-full h-3 rounded-full bg-[#006EFE]"></div>
+          </div>
+          <div class="z-20 flex flex-col gap-1 xl:gap-2">
+            <h1 class="text-base font-bold text-[#171C34] md:text-lg lg:text-2xl xl:text-base">Experience Doctor's</h1>
+            <h1 class="text-3xl font-bold text-[#171C34] xl:text-start text-center">95%</h1>
+            <div class="w-full h-3 rounded-full bg-[#FEB00F]"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="w-screen h-[calc(100vh-79px)] xl:bg-white grid xl:grid-cols-2 relative bg-white md:bg-white">
+
+
+    <div class="flex items-center justify-center xl:flex xl:items-center xl:justify-end">
+      <div class="flex items-center flex-col w-[80%]">
+        <h2
+          class="text-4xl xl:text-start text-center font-bold xl:mb-0 mb-5 text-[#171C34] xs:text-2xl xs:mb-4 md:text-6xl lg:text-8xl xl:text-5xl lg:text-center xl:mr-auto">
+          Your Smile, Our Priority</h2>
+        <p
+          class="md:mb-6 mb-5 text-[#696969] font-semibold xl:text-start text-center xs:text-xs xs:mb-4 md:text-base md:my-6 md:w-[80%] md:mx-auto lg:text-xl lg:my-12 xl:w-full xl:my-5 xl:text-base xl:font-normal">
+          We prioritize your smile by delivering exceptional dental care, ensuring comfort, and offering personalized
+          treatments for your utmost satisfaction.</p>
+        <div
+          class="flex items-center justify-center w-full gap-5 xl:flex xl:items-start xl:justify-start xs:gap-3 md:gap-6">
+          <button
+            class="bg-[#006CFF] xl:p-3 xs:p-1 p-2 md:p-3 lg:p-5 md:font-semibold rounded-lg text-base font-semibold text-white xs:font-medium lg:font-semibold lg:text-lg xl:text-base xl:font-semibold">
+            Learn More
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="flex items-center justify-center">
+      <div
+        class="card object-cover rounded-tl-[50px] rounded-br-[50px] hover:rounded-tr-[50px] hover:rounded-bl-[50px] duration-500 transition-all shadow-2xl shadow-black/50 xl:w-[280px] xl:h-[360px] w-64 h-80 xs:w-52 xs:h-64 xs:mt-1 md:w-72 md:h-96 ">
+        <img
+          class="object-cover rounded-tl-[50px] rounded-br-[50px] hover:rounded-tr-[50px] hover:rounded-bl-[50px] duration-500 transition-all"
+          src="doctor-6-removebg.png" alt="">
+        <div class="detial">
+          <h2 class="text-xl font-bold text-white xs:text-base">Dr.Tushar S. Pathak</h2>
+          <p class="font-medium">Periodontist & Implantologist<button></button>
+          <p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white mx-auto w-[85%] xl:h-[calc(100vh-79px)] grid xl:grid-cols-2 overflow-hidden subject">
+    <div class="bg-white">
+      <div class="w-full items-center flex justify-center h-full rounded-lg overflow-hidden "> <img
+          class="xl:w-80  rounded-lg "
+          src="https://img.freepik.com/premium-photo/clean-sterile-doctors-office-room-being-nice-arranged-with-new-equipment-treatment_259150-18025.jpg?w=360"
+          alt="">
+      </div>
+    </div>
+    <div class="bg-white ">
+      <div class=" grid xl:grid-cols-2 pr-12 md:grid-cols-2">
+        <div class=" px-2">
+          <div>
+            <h1 class="text-3xl font-bold py-10">About us</h1>
+          </div>
+          <div> <button
+              class="bg-black text-white py-1 px-2 rounded-full text-sm font-normal cursor-default">Establishment</button>
+            <h1 class="font-semibold text-base py-3"> Dr. Pathak's Superspecialty Dental & Implant Clinic</h1>
+            <p class="font-normal text-black70 text-sm mb-8"> Dr. Pathak's Superspecialty Dental & Implant Clinic was
+              established in the year 2012. It has a team of specialists who provide specialised dental care.</p>
+          </div>
+          <div> <button
+              class="bg-black text-white py-1 px-2 rounded-full text-sm font-normal cursor-default">Leadership</button>
+            <h1 class="font-semibold text-base py-3">Dr. Tushar Pathak & Dr. Mudita Pathak</h1>
+            <p class="font-normal text-black70 text-sm mb-8"> The clinic is primarily run by Dr. Tushar Pathak
+              [MDS(Periodontist & Oral Implantologist)] and Dr. Mudita Pathak(BDS) situated at Santoshi mata Road,
+              Rambaug, Kalyan west.</p>
+          </div>
+        </div>
+        <div class=" px-2">
+          <div class="xl:mt-[116px] md:mt-[116px]"> <button
+              class="bg-black text-white py-1 px-2 rounded-full text-sm font-normal cursor-default">Mission</button>
+            <h1 class="font-semibold text-base py-3">Personalized and High-Quality Dental Care</h1>
+            <p class="font-normal text-black70 text-sm mb-8"> We offer personalized, high-quality dental care for the
+              whole family, utilizing cutting-edge equipment and advanced pain management.</p>
+          </div>
+          <div> <button class="bg-black text-white py-1 px-2 rounded-full text-sm font-normal cursor-default">Services
+              Offered</button>
+            <h1 class="font-semibold text-base py-3">Comprehensive Dental Treatments</h1>
+            <p class="font-normal text-black70 text-sm mb-8 text"> We offer dental services like implants, painless root
+              canals, smile design, whitening, oral and gum surgeries, cosmetic dentistry, Invisalign, and top-notch
+              treatments, all at affordable rates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto w-[85%] xl:h-[calc(100vh-79px)] pt-2 mt-5 subject h-auto lg:mb-16 xl:mb-0">
+
+    <div class="w-full h-full ">
+      <div class="">
+        <h1 class="font-bold text-3xl text-center mt-5 lg:mb-16 xl:mb-0">Meat Our Doctors</h1>
+      </div>
+      <div class="xl:flex xl:justify-center xl:items-center w-full xl:gap-4 h-[calc(100%-44px)]
+         grid grid-cols-1 gap-16 lg:mt-0 mt-14 md:grid md:grid-cols-2 lg:grid-cols-3">
+
+        <div class="card1">
+          <div class="imgcard1">
+            <img src="doctor-6-removebg.png" alt="">
+          </div>
+          <div class="content1">
+            <div class="detials1">
+              <h2>Dr. Tushar Pathak<br><span>Periodontist & Implantologist</span></h2>
+              <div class="data1">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, minima.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card1 ">
+          <div class="imgcard1 ">
+            <img class="bg-[#006EFE]" src="doctor-5-Photoroom.png-Photoroom (1).png" alt="">
+          </div>
+          <div class="content1">
+            <div class="detials1">
+              <h2>Dr. Mudita Pathak<br><span>Dental Surgeon</span></h2>
+              <div class="data1">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, minima.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card1">
+          <div class="imgcard1">
+            <img src="doctor-3-Photoroom.png-Photoroom.png" alt="">
+          </div>
+          <div class="content1">
+            <div class="detials1">
+              <h2>Dr. Hrushikesh Aphale<br><span>Orthodontist</span></h2>
+              <div class="data1">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, minima.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card1 hidden md:block lg:hidden">
+          <div class="imgcard1">
+            <img src="doctor-8-Photoroom.png-Photoroom.png" alt="">
+          </div>
+          <div class="content1">
+            <div class="detials1">
+              <h2>Dr. Prasanna Nara<br><span>Maxillofacial Surgeon</span></h2>
+              <div class="data1">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, minima.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="card1 hidden md:block lg:hidden">
+          <div class="imgcard1">
+            <img src="doctor-10-Photoroom.png-Photoroom.png" alt="">
+          </div>
+          <div class="content1">
+            <div class="detials1">
+              <h2>Dr. Mihihir Jha<br><span>Periodontist</span></h2>
+              <div class="data1">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, minima.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+  </section>
+
+
+  <section id="subject" class="mx-auto w-[85%] xl:h-[calc(100vh-79px)] pt-2 mt-5 h-auto md:hidden lg:block">
+
+    <div class="w-full h-full">
+      <div
+        class="xl:flex xl:justify-center xl:items-center w-full xl:gap-4 h-full grid grid-cols-1 gap-16 lg:mt-0 my-10 md:flex md:justify-center md:items-center md:gap-4 md:mt-12">
+
+        <div class="card1">
+          <div class="imgcard1">
+            <img src="doctor-8-Photoroom.png-Photoroom.png" alt="">
+          </div>
+          <div class="content1">
+            <div class="detials1">
+              <h2>Dr. Prasanna Nara<br><span>Maxillofacial Surgeon</span></h2>
+              <div class="data1">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, minima.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="card1">
+          <div class="imgcard1">
+            <img src="doctor-10-Photoroom.png-Photoroom.png" alt="">
+          </div>
+          <div class="content1">
+            <div class="detials1">
+              <h2>Dr. Mihihir Jha<br><span>Periodontist</span></h2>
+              <div class="data1">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, minima.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="h-auto w-full mb-10 ">
+    <div class="text-center">
+      <h1 class="text-3xl mb-12 font-medium">Treatments</h1>
+    </div>
+    <div
+      class="w-full xl:flex xl:justify-center xl:items-center xl:gap-6 flex flex-col xl:flex-row justify-center items-center gap-6 md:flex md:justify-center md:items-center md:gap-4 md:flex-row">
+      <div class="bg-white shadow-lg w-64 h-72 rounded-xl">
+        <div class="overflow-hidden">
+          <img class="rounded-t-xl hover:scale-110 duration-500" src="https://i.postimg.cc/VN3hPD1s/orthodontist.webp"
+            alt="">
+        </div>
+        <div class="flex flex-col gap-2 p-4">
+          <h1 class="text-xl font-semibold">Orthodontist treatment</h1>
+          <p class="text-base font-normal text-gray-500">Metal braces, Ceramic braces, Damon braces </p>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg w-64 h-72 rounded-xl">
+        <div class="overflow-hidden">
+          <img class="rounded-t-xl hover:scale-110 duration-500" src="https://i.postimg.cc/x8KyhV3Y/invisible.webp"
+            alt="">
+        </div>
+        <div class="flex flex-col gap-2 p-4">
+          <h1 class="text-xl font-semibold">Invisible braces</h1>
+          <p class="text-base font-normal text-gray-500">Invisible Braces & InvisalignUtillizing</p>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg w-64 h-72 rounded-xl">
+        <div class="overflow-hidden">
+          <img class="rounded-t-xl hover:scale-110 duration-500" src="https://i.postimg.cc/Z5r2p0BY/clear.webp" alt="">
+        </div>
+        <div class="flex flex-col gap-2 p-4">
+          <h1 class="text-xl font-semibold">Clear aligners</h1>
+          <p class="text-base font-normal text-gray-500">Lorem ipsum dolor sit amet consectetur. </p>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg w-64 h-72 rounded-xl">
+        <div class="overflow-hidden">
+          <img class="rounded-t-xl hover:scale-110 duration-500"
+            src="https://plus.unsplash.com/premium_photo-1661436643545-732ea5236e59?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="">
+        </div>
+
+        <div class="flex flex-col gap-2 p-4">
+          <h1 class="text-xl font-semibold">Root canal treatment</h1>
+          <p class="text-base font-normal text-gray-500">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-full xl:flex xl:justify-center xl:items-center xl:gap-6 flex flex-col xl:flex-row justify-center items-center gap-6 mt-6 md:flex md:justify-center md:items-center md:gap-4 md:flex-row">
+      <div class="bg-white shadow-lg w-64 h-72 rounded-xl">
+        <div class="overflow-hidden">
+          <img class="rounded-t-xl w-[256px] h-[170.8px] hover:scale-110 duration-500"
+            src="https://i.postimg.cc/5tCQNd6C/11.webp" alt="">
+        </div>
+        <div class="flex flex-col gap-2 p-4">
+          <h1 class="text-xl font-semibold">Stained teeth</h1>
+          <p class="text-base font-normal text-gray-500">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg w-64 h-72 rounded-xl">
+        <div class="overflow-hidden">
+          <img class="rounded-t-xl hover:scale-110 duration-500" src="https://i.postimg.cc/zXxxTWpk/wisdom.webp" alt="">
+        </div>
+        <div class="flex flex-col gap-2 p-4">
+          <h1 class="text-xl font-semibold">Tooth Extraction</h1>
+          <p class="text-base font-normal text-gray-500">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg w-64 h-72 rounded-xl">
+        <div class="overflow-hidden">
+          <img class="rounded-t-xl hover:scale-110 duration-500" src="https://i.postimg.cc/D0xwcFCm/8.webp" alt="">
+        </div>
+        <div class="flex flex-col gap-2 p-4">
+          <h1 class="text-xl font-semibold">White Filling</h1>
+          <p class="text-base font-normal text-gray-500">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg w-64 h-72 rounded-xl overflow-hidden">
+        <div class="overflow-hidden">
+          <img class="rounded-t-xl hover:scale-110 duration-500 " src="https://i.postimg.cc/QdJhgjHD/12.webp" alt="">
+        </div>
+        <div class="flex flex-col gap-2 p-4">
+          <h1 class="text-xl font-semibold">Gum treatment</h1>
+          <p class="text-base font-normal text-gray-500">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full h-auto my-10 ">
+    <div>
+      <h1 class="text-3xl font-medium xl:ml-32 xl:text-start text-center">TESTIMONIALS</h1>
+    </div>
+    <div class="xl:ml-32 mt-5 w-[90%] h-auto  flex flex-col xl:gap-4 gap-6  xl:mx-0 mx-auto">
+
+      <div class="xl:w-[550px] h-44 bg-white rounded-xl  xl:ml-48 flex shadow-lg subject w-full">
+        <div class="w-[176px] h-full">
+          <img class="object-cover h-full rounded-l-xl" src="patient 7.png" alt="">
+        </div>
+        <div class="flex flex-col gap-2 w-full h-full items-start justify-center  mx-5">
+          <h1 class="text-xl font-semibold">Ajaykumar Pandey</h1>
+          <p class="text-gray-500 text-sm font-normal">I visited at Mr. Pathak sir's Dental clinic for the root canal of
+            my teeth. Now, my teeth is very good and Mr. Pathak sir and madam are very good co-operative and experienced
+            doctors.</p>
+        </div>
+      </div>
+
+
+      <div class="xl:w-[550px] h-44 bg-white rounded-xl flex shadow-lg subject w-full">
+        <div class="w-[176px] h-full">
+          <img class="object-cover h-full rounded-l-xl" src="patient 2.png" alt="">
+        </div>
+        <div class="flex flex-col gap-2 w-full h-full items-start justify-center  mx-5">
+          <h1 class="text-xl font-semibold">Selvi Mudaliyar</h1>
+          <p class="text-gray-500 text-sm font-normal">Consulted Dr. Tushar Pathak for shaky tooth, advised bridging.
+            Second opinion agreed, explained pros/cons. Procedure done in a month. Special thanks to Dr. Pathak, Dr.
+            Mudita Pandey, and team.</p>
+        </div>
+      </div>
+
+
+      <div class="xl:w-[550px] h-44 bg-white rounded-xl  xl:ml-48 flex shadow-lg subject w-full">
+        <div class="w-[176px] h-full">
+          <img class="object-cover h-full rounded-l-xl" src="patient 9.png" alt="">
+        </div>
+        <div class="flex flex-col gap-2 w-full h-full items-start justify-center  mx-5">
+          <h1 class="text-xl font-semibold">Nayana Kapse</h1>
+          <p class="text-gray-500 text-sm font-normal">Excellent treatment. Got filling done at the hands of Dr. Mudita
+            Pathak..It was done so beautifully. Highly recommended.</p>
+        </div>
+      </div>
+
+      <div class="xl:w-[550px] h-44 bg-white rounded-xl flex shadow-lg subject w-full">
+        <div class="w-[176px] h-full">
+          <img class="object-fill w-full h-full rounded-l-xl" src="patient 3.png" alt="">
+        </div>
+        <div class="flex flex-col gap-2 w-full h-full items-start justify-center  mx-5">
+          <h1 class="text-xl font-semibold">Shridhar Iyer</h1>
+          <p class="text-gray-500 text-sm font-normal">Dr. Tushar Pathak, a top Dental Super Specialist, performed
+            painless root canal and replaced capping in one day on June 20. Multi-ceramic capping with ten-year validity
+            installed.</p>
+        </div>
+      </div>
+
+
+      <div class="xl:w-[550px] h-44 bg-white rounded-xl  xl:ml-48 flex shadow-lg subject w-full">
+        <div class="w-[176px] h-full">
+          <img class="object-cover w-full h-full rounded-l-xl" src="patient 5.png" alt="">
+        </div>
+        <div class="flex flex-col gap-2 w-full h-full items-start justify-center  mx-5">
+          <h1 class="text-xl font-semibold">Rani Kaur Jaswal</h1>
+          <p class="text-gray-500 text-sm font-normal">First review I've written, but Dr. Tushar deserves it. Great
+            experience, comfortable implant surgery. Admire his loving approach to patients, awesome dentist and guide.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="xl:w-[550px] h-44 bg-white rounded-xl flex shadow-lg subject w-full">
+        <div class="w-[176px] h-full">
+          <img class="object-fill w-full h-full rounded-l-xl" src="patient 0.png" alt="">
+        </div>
+        <div class="flex flex-col gap-2 w-full h-full items-start justify-center  mx-5">
+          <h1 class="text-xl font-semibold">Shobha Poonja</h1>
+          <p class="text-gray-500 text-sm font-normal">Best service delivered by the expert dentist as currently no
+            issues facing as far as my teeth are concerned. Most reliable and amiable dentist I have ever met.</p>
+        </div>
+      </div>
+
+
+      <div class="xl:w-[550px] h-44 bg-white rounded-xl  xl:ml-48 flex shadow-lg subject w-full">
+        <div class="w-[176px] h-full">
+          <img class="object-cover w-full h-full rounded-l-xl" src="patient 6.png" alt="">
+        </div>
+        <div class="flex flex-col gap-2 w-full h-full items-start justify-center  mx-5">
+          <h1 class="text-xl font-semibold">Ranbir Saini</h1>
+          <p class="text-gray-500 text-sm font-normal">Had an amazing experience at Dr. Pathak's Dental Clinic. Highly
+            recommend Dr. Tushar and Dr. Mudita. Got extractions and dentures, with relaxing music. Satisfying
+            experience, great job doctors, you're a blessing.</p>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <section class="w-full h-[calc(100vh-79px)]  flex justify-center flex-col items-center gap-5 subject">
+    <h1 class="font-semibold text-3xl text-center">Dr. Pathak's Superspecialty Dental & Implant Clinic</h1>
+    <div class="bg-white w-[80%] h-[80%] rounded-xl shadow-2xl">
+      <iframe class="w-full h-full rounded-xl"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15067.704878284054!2d73.13738400000001!3d19.242047!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7955fb68a0e17%3A0x3b2c297396eb518!2sDr.%20Pathak&#39;s%20Superspecialty%20Dental%20%26%20Implant%20Clinic!5e0!3m2!1sen!2sus!4v1709202223039!5m2!1sen!2sus"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <section class="w-full xl:h-[calc(100vh-79px)] h-auto xl:grid xl:grid-cols-10">
+    <div class="xl:col-span-4 p-5 flex justify-center items-start my-auto">
+      <div class="p-5 flex flex-col gap-2">
+        <h1 class="text-3xl space-x-2 font-semibold text-[#3C3C3C]">CONTACT INFO</h1>
+        <div class="flex flex-col gap-2">
+          <div class="flex items-start gap-3">
+            <div><i class="fa-solid fa-location-dot" style="color: #FFD43B;"></i></div>
+            <div>
+              <h1 class="text-lg font-medium text-gray-600">Dr. Pathak's Superspecialty Dental & Implant Clinic</h1>
+              <p class="text-gray-400 font-normal text-base">Building A2 shop No 9, First floor, Shreya Palace opp.
+                Adarsh School Rambaug Kalyan, Maharashtra 421301
+                India</p>
+            </div>
+          </div>
+
+          <p class="flex items-start gap-3 text-gray-600 font-medium text-base"><span><i class="fa-regular fa-clock"
+                style="color: #74C0FC;"></i></span>
+            Sun - 10am-1pm
+            <br>
+            Mon to Sat - 10am-2pm, 6pm-9pm
+          </p>
+          <p class="flex gap-3 text-lg font-medium text-gray-600"><span><i class="fa-solid fa-phone"
+                style="color: #FFD43B;"></i></span> 8097198054</p>
+          <p class="flex gap-3 text-lg font-medium text-gray-600"><span><i class="fa-regular fa-envelope"
+                style="color: #74C0FC;"></i></span>dentist.drpathak@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="xl:col-span-6  flex justify-center items-center flex-col">
+
+      <div class="flex flex-col gap-3 w-full xl:w-auto xl:p-0 p-4">
+        <div>
+          <h1 class="text-3xl space-x-2 font-semibold text-[#3C3C3C]">CONTACT FORM</h1>
+        </div>
+        <div
+          class="xl:gap-3 w-full flex flex-col gap-4  xl:grid xl:grid-cols-2 xl:h-9 lg:grid lg:grid-cols-2 lg:gap-3 md:grid md:grid-cols-2 md:gap-3">
+          <div class="border-[1px] border-[#9FA6B2] rounded-lg xl:h-auto h-12"><input
+              class="w-full h-full pl-4 border-none outline-gray-500 rounded-lg" type="name" placeholder="Full Name"
+              required></div>
+          <div class="border-[1px] border-[#9FA6B2] rounded-lg xl:h-auto h-12"><input
+              class="w-full h-full pl-4 border-none outline-gray-500 rounded-lg" type="subject" placeholder="Subject"
+              required></div>
+        </div>
+        <div
+          class="xl:grid xl:grid-cols-2 xl:gap-3 flex flex-col gap-4 w-full xl:h-9 lg:grid lg:grid-cols-2 lg:gap-3 md:grid md:grid-cols-2 md:gap-3">
+          <div class="border-[1px] border-[#9FA6B2] rounded-lg xl:h-auto h-12"><input
+              class="w-full h-full pl-4 border-none outline-gray-500 rounded-lg" type="num" placeholder="Phone number"
+              required></div>
+          <div class="border-[1px] border-[#9FA6B2] rounded-lg xl:h-auto h-12"><input
+              class="w-full h-full pl-4 border-none outline-gray-500 rounded-lg" type="email" placeholder="Email"
+              required>
+          </div>
+        </div>
+        <div class="border-[1px] border-[#9FA6B2] rounded-lg">
+          <textarea class="pl-4 pt-4 border-none rounded-lg outline-gray-500 xl:w-[600px] w-full" name="Message"
+            rows="7" placeholder="Message"></textarea>
+        </div>
+        <div>
+          <button class="bg-[#006CFF] py-2 px-4 text-base font-semibold text-white rounded-lg">Send Message</button>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/6e85196de5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
